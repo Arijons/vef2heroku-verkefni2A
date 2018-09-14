@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+from sys import argv
 
 from bottle import Bottle, template
 
@@ -27,4 +28,4 @@ def greet(name='Stranger'):
    # return <h1>linkur1</h1>
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host="0.0.0.0" )
