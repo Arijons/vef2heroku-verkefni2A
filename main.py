@@ -6,11 +6,10 @@ bottle.debug(True)
 
 from bottle import Bottle, template
 
-app = Bottle()
 
 
 
-@app.route('/')
+@route('/')
 def index():
     """Home page"""
 
@@ -21,14 +20,11 @@ def index():
     return template('simple.tpl', info)
 
 
-@app.route('/<name>')
+@route('/<name>')
 def greet(name='Stranger'):
     return "Hello " + name
 
 
-#@app.route('/1/')
-#def index():
-   # return <h1>linkur1</h1>
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0" port=argv[1] )
+    bottle.run(host="0.0.0.0" port=argv[1] )
