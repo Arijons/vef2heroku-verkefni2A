@@ -4,11 +4,6 @@ import bottle
 from bottle import*
 bottle.debug(True)
 
-from bottle import Bottle, template
-
-
-
-
 @route('/')
 def index():
     info = {'title': 'Welcome Home!',
