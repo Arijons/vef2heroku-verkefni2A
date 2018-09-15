@@ -11,8 +11,6 @@ from bottle import Bottle, template
 
 @route('/')
 def index():
-    """Home page"""
-
     info = {'title': 'Welcome Home!',
             'content': 'Hello World'
             }
